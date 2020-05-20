@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-nest",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   "author": "Petr Cibulka",
   "license": "ISC",
   "repository": "https://github.com/cibulka/eslint-config-nest",
-  "devDependencies": {
+  "dependencies": {
     "babel-eslint": "^11.0.0"
   }
 }
