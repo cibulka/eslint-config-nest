@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-nest",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,6 @@
   "license": "ISC",
   "repository": "https://github.com/cibulka/eslint-config-nest",
   "dependencies": {
-    "babel-eslint": "^11.0.0"
+    "babel-eslint": "^10.1.0"
   }
 }
