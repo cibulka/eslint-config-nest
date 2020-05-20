@@ -1,17 +1,22 @@
 {
   "name": "eslint-config-nest",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "",
   "main": "index.js",
   "scripts": {
     "lint": "eslint --fix --ext .js --ext .jsx ../../. && ls -al || exit 0",
-    "postinstall": "npx install-peerdeps --dev eslint-config-airbnb",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Petr Cibulka",
   "license": "ISC",
   "repository": "https://github.com/cibulka/eslint-config-nest",
   "dependencies": {
-    "babel-eslint": "^10.1.0"
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^2.5.0"
   }
 }
