@@ -4,6 +4,7 @@ module.exports = {
         "document": true,
         "window": true
     },
+    "ignorePatterns": ["node_modules", "deprecated"],
     "rules": {
         "import/prefer-default-export": "off",
         "import/no-unresolved": "off",
@@ -42,10 +43,6 @@ module.exports = {
     "settings": {
         "import/resolver": {
             "alias": {
-                "map": [
-                    ["config", "./config"],
-                    ["translations", "./translations"]
-                ],
                 "extensions": [".js", ".jsx"]
             },
         }
