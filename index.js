@@ -1,12 +1,23 @@
 module.exports = {
-    "extends": "airbnb",
-    "parser": "babel-eslint",
-    "globals": {
-        "document": true,
-        "window": true
+    // "parser": "babel-eslint",
+    parserOptions: {
+		ecmaVersion: 2020,
+		sourceType: 'module',
+		ecmaFeatures: {
+			modules: true,
+			impliedStrict: true,
+			experimentalObjectRestSpread: true,
+			experimentalDecorators: true,
+			jsx: true
+		}
+	},
+    extends: "airbnb",
+    globals: {
+        document: true,
+        window: true
     },
-    "ignorePatterns": ["node_modules", "deprecated"],
-    "rules": {
+    ignorePatterns: ["node_modules", "deprecated"],
+    rules: {
         "import/prefer-default-export": "off",
         "import/no-unresolved": "off",
         "indent": ["error", 4, {
@@ -40,12 +51,5 @@ module.exports = {
         "sort-imports": ["error", {
             "ignoreDeclarationSort": true,
         }]
-    },
-    "settings": {
-        "import/resolver": {
-            "alias": {
-                "extensions": [".js", ".jsx"]
-            },
-        }
     }
 };
